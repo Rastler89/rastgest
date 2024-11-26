@@ -3,13 +3,13 @@
 
 import reflex as rx
 
-from ..components import container
+from ..components import jumbotron
 
 
 def auth_layout(*args):
     """The shared layout for the login and sign up pages."""
     return rx.box(
-        container(
+        jumbotron(
             rx.vstack(
                 rx.heading("Bienvenido a RastGest", size="8"),
                 rx.heading("Accede a tu cuenta o crea una nueva", size="8"),

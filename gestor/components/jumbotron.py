@@ -1,17 +1,17 @@
-"""A container component."""
+"""A jumbotron component."""
 
 import reflex as rx
 
 
-def container(*children, **props):
-    """A fixed container based on a 960px grid."""
+def jumbotron(*children, **props):
+    """A fixed jumbotron based on a 960px grid."""
     # Enable override of default props.
     props = (
         dict(
-            width="100vw",
-            max_width="1920px",
+            width="60vw",
+            max_width="960px",
             background="white",
-            height="100vh",
+            max_height="750px",
             px="9",
             margin="0 auto",
             position="relative",
